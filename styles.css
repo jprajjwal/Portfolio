@@ -16,13 +16,13 @@
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #27374D;
+    background: #6f61c0;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #27374D;
+    background: #6f61c0;
 }
 /* navbar styling */
 nav{
@@ -34,7 +34,7 @@ nav{
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
-  background: #27374D;
+  background: #6f61c0;
   padding: 13px 0;
 }
 nav .navbar{
@@ -47,7 +47,7 @@ nav .navbar{
 nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
-  color: #27374D;
+  color: #6f61c0;
 }
 nav.sticky .navbar .logo a{
   color: #fff;
@@ -63,21 +63,21 @@ nav .navbar .menu li{
 .navbar .menu a{
   font-size: 18px;
   font-weight: 500;
-  color: #0E2431;
+  color: #6F61C0;
   padding: 6px 0;
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover{
-  color: #27374D;
+  color: #6f61c0;
 }
 nav.sticky .menu a{
   color: #FFF;
 }
 nav.sticky .menu a:hover{
-  color: #0E2431;
+  color: #6F61C0;
 }
 .navbar .media-icons a{
-  color: #27374D;
+  color: #6f61c0;
   font-size: 18px;
   margin: 0 6px;
 }
@@ -98,7 +98,7 @@ nav .menu-btn,
   display: none;
 }
 nav .menu-btn{
-  color: #27374D;
+  color: #6f61c0;
 }
 nav.sticky .menu-btn{
   color: #FFF;
@@ -116,6 +116,10 @@ nav.sticky .menu-btn{
   background-position: center;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:flex-start;
 }
 .home .home-content{
   width: 90%;
@@ -124,13 +128,14 @@ nav.sticky .menu-btn{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 100px;
 }
 .home .text-one{
   font-size: 25px;
-  color: #0E2431;
+  color: #6F61C0;
 }
 .home .text-two{
-  color: #526D82;
+  color: #1D267D;
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
@@ -138,34 +143,58 @@ nav.sticky .menu-btn{
 .home .text-three{
   font-size: 40px;
   margin: 5px 0;
-  color: #9DB2BF;
+  color: #2F58CD;
 }
 .home .text-four{
   font-size: 23px;
   margin: 5px 0;
-  color: #0E2431;
+  color: black;
 }
 .home .button{
   margin: 14px 0;
 }
 .home .button button{
   outline: none;
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 5px 16px;
+  border-radius: 10px;
   font-size: 25px;
   font-weight: 400;
-  background: #27374D;
+  background: #6f61c0;
   color: #fff;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
 }
 .home .button button:hover{
-  border-color: #27374D;
+  border-color: #6f61c0;
   background-color: #fff;
-  color: #27374D;
+  color: #6f61c0;
 }
 
+.button{
+  display: flex;
+  gap: 20px;
+}
+
+.profileImg{
+  width: 900px;
+  height: 500px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /* background-color: #6f61c0; */
+  flex-direction: row;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
+.profileImg img{
+  height: 500px;
+  width:500px;
+  border-radius: 50%;
+  border: 2px solid #6f61c0;
+}
 /* About Section Styling */
 /* Those Elements Where We Have Apply Same CSS,
  I'm Selecting Directly 'Section Tag' and 'Class'  */
@@ -188,7 +217,7 @@ section .title{
   margin-bottom: 40px;
 }
 section .title span{
-  color: #0E2431;
+  color: #6F61C0;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -200,7 +229,7 @@ section .title span::after{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #27374D;
+  background: #6f61c0;
   left: 0;
   bottom: 0;
 }
@@ -215,22 +244,23 @@ section .title span::after{
 }
 .about .left img{
   height: 400px;
-  width: 400px;
+  width: 450px;
   object-fit: cover;
   border-radius: 12px;
+  object-position: right;
 }
 .about-details .right{
   width: 55%;
 }
 section  .topic{
-  color: #0E2431;
+  color: #6F61C0;
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 .about-details .right p{
   text-align: justify;
-  color: #0E2431;
+  color: black;
 }
 section .button{
   margin: 16px 0;
@@ -241,19 +271,41 @@ section .button button{
   border-radius: 4px;
   font-size: 25px;
   font-weight: 400;
-  background: #27374D;
+  background: #6f61c0;
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 section .button button:hover{
-  border-color: #27374D;
+  border-color: #6f61c0;
   background-color: #fff;
-  color: #27374D;
+  color: #6f61c0;
 }
 
  /* My Skills CSS */
+ .box1 img{
+  mix-blend-mode:multiply;
+  max-width: 80px;
+ }
+
+ .box2 img{
+  mix-blend-mode:multiply;
+  max-width: 80px;
+  
+ }
+
+ .box3 img{
+  mix-blend-mode:multiply;
+  max-width: 55px;
+  
+ }
+ .box4 img{
+  mix-blend-mode:multiply;
+  max-width: 150px;
+
+ }
+
  .skills{
    background: #F0F8FF;
  }
@@ -262,14 +314,14 @@ section .button button:hover{
  }
  .skills .skills-details{
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    align-items: center;
  }
  .skills-details .text{
    width: 50%;
  }
  .skills-details p{
-   color: #0E2431;
+   color: #6F61C0;
    text-align: justify;
  }
 .skills .skills-details .experience{
@@ -278,11 +330,11 @@ section .button button:hover{
   margin: 0 10px;
 }
 .skills-details .experience .num{
-  color: #0E2431;
+  color: #6F61C0;
   font-size: 80px;
 }
 .skills-details .experience .exp{
-  color: #0E2431;
+  color: #6F61C0;
   margin-left: 20px;
   font-size: 18px;
   font-weight: 500;
@@ -292,7 +344,8 @@ section .button button:hover{
   width: 45%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 .skills-details .box{
   width: calc(100% / 2 - 20px);
@@ -300,18 +353,22 @@ section .button button:hover{
 }
 .skills-details .boxes .topic{
   font-size: 20px;
-  color: #27374D;
+  color: #6f61c0;
 }
 .skills-details .boxes .per{
   font-size: 60px;
-  color: #27374D;
+  color: #6f61c0;
+}
+
+.skills .content{
+  margin-top: 0px;
 }
 
 /* My Services CSS */
 .services .boxes{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .services .boxes .box{
   margin: 20px 0;
@@ -324,15 +381,19 @@ section .button button:hover{
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover{
-  background: #27374D;
+  background: #6f61c0;
   color: #fff;
 }
 
 .box a{
-  color:#0E2431;
+  color:#6F61C0;
 }
 
-.services .boxes .box .icon{
+.box .click1{
+  text-align: left;
+}
+
+/* .services .boxes .box .icon{
   height: 50px;
   width: 50px;
   background: #27374D;
@@ -347,15 +408,16 @@ section .button button:hover{
 .boxes .box:hover .icon{
   background-color: #fff;
   color: #27374D;
-}
+} */
+
 .boxes .box:hover .click{
-  background-color:#27374D;
+  background-color:#6f61c0;
   color:#fff;
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p {
-  color: #0E2431;
+  color: #6F61C0;
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover .topic,
@@ -363,25 +425,106 @@ section .button button:hover{
   color: #fff;
 }
 /* Contact Me CSS */
-.contact{
-  background: #F0F8FF;
+
+.contImage img{
+  height: 400px;
+  width: 750px;
+  /* object-fit: cover; */
+  border-radius: 12px;
+  /* object-position: right; */
 }
-.contact .content{
-  margin: 0 auto;
-  padding: 30px 0;
+
+.contact_me{
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
-.contact .text{
-  width: 80%;
+
+.contact_me h3{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+  margin-bottom: 80px;
   text-align: center;
-  margin: auto;
 }
+
+.contact_me_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 100px;
+}
+
+.contact_me_container img{
+  width:600px;
+  height: 550px;
+  margin-left: 00px;
+  /* mix-blend-mode: multiply; */
+
+}
+/* 
+.contImage img{
+  mix-blend-mode: multiply;
+} */
+
+.contact_me_container form{
+  border:1.5px solid #6f61c0;
+  border-radius: 10px;
+  padding:30px 40px;
+  width:400px;
+  background-color:#6f61c0;
+  color: white;
+}
+
+.contact_me_container form label,input,textarea{
+  
+  margin-bottom: 8px;
+
+}
+
+.contact_me_container form textarea{
+  border:1.5px solid #6f61c0;
+  height:80px;
+  padding: 8px 5px
+}
+
+.contact_me_container form label{
+  margin-right: 5px;
+  background-color: transparent;
+}
+
+.contact_me_container form input{
+  margin:8px 5px;
+  border: 1.5px solid white;
+  padding:5px 10px
+}
+
+.label{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_me_container form button{
+  margin-top:18px;
+  border: 1.5px solid #6f61c0;
+  border-radius: 5px;
+  padding:5px 20px;
+  font-weight: 500;
+  width:100%;
+  font-size: 19px;
+}
+
+.contact_me_container form div{
+  background-color: transparent;
+}
+
 
 /* Footer CSS */
 footer{
-  background: #27374D;
+  background: #6f61c0;
   padding: 15px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
 }
 footer .text span{
   font-size: 17px;
@@ -401,7 +544,7 @@ footer .text span a:hover{
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #27374D;
+  background: #6f61c0;
   padding: 7px 12px;;
   font-size: 18px;
   border-radius: 6px;
@@ -449,7 +592,7 @@ footer .text span a:hover{
     position: fixed;
     left: -100%;
     top: 0;
-    background: #0E2431;
+    background: #6F61C0;
     height: 100vh;
     max-width: 400px;
     width: 100%;
@@ -468,7 +611,7 @@ footer .text span a:hover{
     margin: 10px 0;
   }
   nav.sticky .menu a:hover{
-    color: #27374D;
+    color: #6f61c0;
   }
   nav .navbar .media-icons{
     display: none;
@@ -515,7 +658,7 @@ footer .text span a:hover{
   }
   .skills-details .boxes .per{
     font-size: 50px;
-    color: #27374D;
+    color: #6f61c0;
   }
 }
 a {
@@ -523,5 +666,10 @@ a {
   }
   
 a:hover{
-    color:#27374D;
+    color:#6f61c0;
+}
+.box img{
+  max-width: 355px;
+  margin-left: 0px;
+  border:solid 2px #6f61c0;
 }

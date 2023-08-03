@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <title>Portfolio.</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -16,20 +15,20 @@
     <!-- navgaition menu -->
     <nav>
       <div class="navbar">
-        <div class="logo"><a href="#">Portfolio.</a></div>
+        <div class="logo"><a href="#">Portfolio+</a></div>
         <ul class="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#services">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <div class="cancel-btn">
             <i class="fas fa-times"></i>
           </div>
         </ul>
         <div class="media-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/prajjwal-j/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/jprajjwal" target="_blank"><i class="fa-brands fa-github"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
@@ -44,12 +43,16 @@
         <div class="text">
           <div class="text-one">Hello,</div>
           <div class="text-two">I'm Prajjwal J</div>
-          <div class="text-three">Web Devloper</div>
+          <div class="text-three">Web Developer</div>
           <div class="text-four">From Bangalore</div>
         </div>
         <div class="button">
-          <button>Hire Me</button>
+          <button><a href="resume.pdf" target="_blank">Resume</a></button>
+          <button><a href="#contact">Contact me</a></button>
         </div>
+      </div>
+      <div class="profileImg">
+        <img src="1w.jpg" alt="" />
       </div>
     </section>
 
@@ -59,55 +62,45 @@
         <div class="title"><span>About Me</span></div>
         <div class="about-details">
           <div class="left">
-            <img src="1w.jpg" alt="" />
+            <img src="aboutImg.jpg" alt="" />
           </div>
           <div class="right">
             <div class="topic">Development Is My Passion</div>
             <p>
-                Skilled web developer with expertise in front-end and back-end development. Proficient in HTML, CSS, JavaScript. Strong problem-solving and communication skills. Keen eye for design and responsive web development. Collaborative team player, adept at troubleshooting and resolving technical issues. Committed to staying updated with the latest industry trends and best practices. Eager to leverage skills and contribute to the success of web development projects.
+              I am a proficient web developer with expertise in front-end. My skill set encircles HTML, CSS, and JavaScript, which I use to build compelling and responsive web experiences.
+
+              <br><br>What sets me apart is my strong aptitude for problem-solving and effective communication. When challenges arise, I thrive in identifying solutions and working collaboratively to ensure seamless project progress. I bring to the table a keen eye for design, which pairs seamlessly with my mastery of responsive web development techniques, resulting in visually appealing and user-friendly websites.
+              <br><br>As a web developer, I am excited about the opportunity to leverage my talents, continually learn, and make a meaningful impact on web development projects.
             </p>
-            <div class="button">
-              <button><a href="resume.pdf" target="_blank">Resume</a></button>
-            </div>
+            
           </div>
         </div>
       </div>
     </section>
 
     <!-- My Skill Section Start -->
-    <!-- Section Tag and Other Div will same where we need to put same CSS -->
     <section class="skills" id="skills">
       <div class="content">
         <div class="title"><span>My Skills</span></div>
         <div class="skills-details">
-          <div class="text">
-            <div class="topic">Skills Reflects Our Knowledge</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus tenetur tempora? Quasi, rem quas omnis. Porro rem aspernatur reiciendis ut praesentium minima ad, quos, officia! Illo libero, et, distinctio repellat sed nesciunt est modi quaerat placeat. Quod molestiae, alias?</p>
-            <div class="experience">
-              <div class="num">0</div>
-              <div class="exp">
-                Years Of <br />
-                Experience
-              </div>
-            </div>
-          </div>
           <div class="boxes">
-            <div class="box">
-              <div class="topic">HTML</div>
-              <div class="per">90%</div>
+            <div class="box1">
+
+              <img src="html.png" alt="">
             </div>
-            <div class="box">
-              <div class="topic">CSS</div>
-              <div class="per">80%</div>
+            <div class="box2">
+
+              <img src="css.png" alt="">
             </div>
-            <div class="box">
-              <div class="topic">JavScript</div>
-              <div class="per">70%</div>
+            <div class="box3">
+      
+              <img src="js.png" alt="">
+             
             </div>
-            <!-- <div class="box">
-              <div class="topic">PHP</div>
-              <div class="per">60%</div>
-            </div> -->
+            <div class="box4">
+      
+              <img src="cpp.png" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -120,70 +113,62 @@
         <div class="boxes">
           <div class="box">
             <div class="icon">
-              <i class="fas fa-desktop"></i>
+              <!-- <i class="fas fa-desktop"></i> -->
             </div>
+            <img src="ss1.png" alt="">
             <a class="click" href="indexL.html" target="_blank"><div class="topic">Landing Page</div></a>
-            <a class="click" href="indexL.html" target="_blank"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p></a>
+            <a class="click1" href="indexL.html" target="_blank"><p>Utilizing HTML, CSS, and JavaScript, a shoes webpage presents an engaging platform to display diverse footwear choices. This amalgamation ensures interactivity, aiding visitors in discovering their perfect shoes through a visually captivating and user-friendly interface.</p></a>
           </div>
           <div class="box">
             <div class="icon">
-              <i class="fas fa-desktop"></i>
+              <!-- <i class="fa-solid fa-calculator"></i> -->
+              
             </div>
-            <a class="click" href="indexL.html" target="_blank"><div class="topic">Calculator</div></a>
-            <a class="click" href="indexL.html" target="_blank"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p></a>
+            <img src="ss2.png" alt="">
+            <a class="click" href="indexCal.html" target="_blank"><div class="topic">Calculator</div></a>
+            <a class="click1" href="indexCal.html" target="_blank"><p>An HTML, CSS, and JavaScript calculator webpage provides a dynamic interface for seamless arithmetic calculations. Users input numbers, select operations, and receive real-time accurate results, ensuring a user-friendly and interactive experience.</p></a>
           </div>
-          <!-- <div class="box">
-            <div class="icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <div class="topic">Graphic Design</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <div class="topic">Digital Marketing</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fab fa-android"></i>
-            </div>
-            <div class="topic">Icon Design</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-camera-retro"></i>
-            </div>
-            <div class="topic">Photography</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-tablet-alt"></i>
-            </div>
-            <div class="topic">Apps Devlopment</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div> -->
+          
         </div>
       </div>
     </section>
 
     <!-- Contact Me section Start -->
-    <section class="contact" id="contact">
-      <div class="content">
-        <div class="title"><span>Contact Me</span></div>
-        <div class="text">
-          <div class="topic">Have Any Project?</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.</p>
-          <div class="button">
-            <button>Let's Chat</button>
-          </div>
+
+    <section class="contact_me" id="contact">
+
+      <h3>Contact Me</h3>
+
+      <div class="contact_me_container">
+
+        <div class="contImage">
+          <img src="conImg.jpg" />
         </div>
+          <form>
+              <div class="label">
+                  <label for="name">Name</label>
+
+                  <input type="text" id="name" name="name" placeholder="Prajjwal J">
+              </div>
+
+              <div class="label">
+                  <label for="email">Email</label>
+
+                  <input type="email" id="email" name="Email" placeholder="prajjwalj02@gmail.com">
+              </div>
+
+              <div class="label">
+                  <label for="message">Message</label>
+
+                  <textarea id="message" placeholder="Enter your message"></textarea>
+
+              </div>
+
+              <button>Submit</button>
+
+          </form>
+
       </div>
-    </section>
 
     <!-- Footer Section Start -->
     <footer>
